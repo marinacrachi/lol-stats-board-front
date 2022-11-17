@@ -11,7 +11,7 @@ const Home = () => {
   };
 
   const handleClick = () => {
-    console.log(name);
+    window.location.href = `/matches/${name}`;
   };
 
   return (
