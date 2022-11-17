@@ -11,7 +11,7 @@ const Home = () => {
   };
 
   const handleClick = () => {
-    window.location.href = `/matches/${name}`;
+    window.location.href = `/summoner/${name}`;
   };
 
   return (

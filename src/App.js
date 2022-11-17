@@ -1,18 +1,18 @@
-import React, { lazy } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { lazy } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import "./App.css";
 
-const Home = lazy(() => import("./pages/Home"));
-const Matches = lazy(() => import('./pages/Matches'));
+const Home = lazy(() => import('./pages/Home'));
+const Summoner = lazy(() => import('./pages/Summoner'));
 
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/matches/:player" element={<Matches />} />
+        <Route path="/summoner/:player" element={<Summoner />} />
       </Routes>
-    </Router>
+  </Router>
   );
 };
 
